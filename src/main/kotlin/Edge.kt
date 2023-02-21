@@ -10,4 +10,7 @@ data class Edge(var vertex1:Vertex, var vertex2:Vertex){
     override fun toString(): String {
         return "($vertex1, $vertex2)"
     }
+    fun toGAP(): String {
+        return "[$vertex1, $vertex2]"
+    }
 }
